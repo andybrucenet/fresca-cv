@@ -117,8 +117,23 @@
       "label": "LinkedIn",
       "network": "LinkedIn",
       "user": "andybruce",
-      "url": "http://www.linkedin.com/in/andybruce"
+      "url": "https://www.linkedin.com/in/andybruce"
+    },
+
+    {
+      "label": "Twitter",
+      "network": "Twitter",
+      "user": "@realcloudratics",
+      "url": "https://twitter.com/realcloudratics"
+    },
+
+    {
+      "label": "Facebook",
+      "network": "Facebook",
+      "user": "andybrucenet",
+      "url": "https://www.facebook.com/andybrucenet"
     }
+
   ],
 
   "employment": {
@@ -163,8 +178,8 @@
         "employer": "RiVidium Corp",
         "position": "Chief Technical Officer",
         "summary": "Led development team in all technology efforts; formulated and expressed technical direction to senior management; presented results to customers.",
-        "start": "2009-05",
-        "end": "2011-06",
+        "start": "2009-06",
+        "end": "2011-05",
         "keywords": ["SharePoint","Windows","C#","JavaScript","ASP.NET","Silverlight"],
         "highlights": ["Led all security certification efforts based on CNSSI 1253 and NIST SP800-53 controls.", "Drove development efforts in support of Army Enterprise Architecture for Chief Information Officer / G-6. Member of Army Enterprise Service-Oriented Architecture Foundation.", "Architected / Built C# ASP.NET and Silverlight applications for Army customers", "Designed / Implemented Hyper-V virtualization infrastructure", "Integrated thin desktops with Hyper-V to deliver VDI to RiVidium staff", "Provided estimates and schedules for all work performed by development team", "Presented / defended work to senior management for funding / work authorization on new technology projects"]
       },
@@ -184,7 +199,7 @@
         "position": "Software Consultant",
         "summary": "Provided development and integration solutions for a variety of customers using best-fit technology and languages.",
         "start": "2002-11",
-        "end": "2006-05",
+        "end": "2006-04",
         "keywords": ["C++", "Perl", "Java", "Visual Basic", "Oracle", "SQL Server", "PostgreSQL"],
         "highlights": ["Tooyen (http://tooyen.com). Developed this online social application (Perl, PostgreSQL) which empowered Amazon sellers by allowing them to reprice their listings automatically (2003-2006).", "CITIdc (Community IT Innovators, http://citidc.com). Provided SQL Server, ASP.NET and DHTML design and development services (2005-2006).", "ePartners Corp: Principal infrastructure architect and technical project leader for the Public Housing Authority Management System (PHAMS, 2002-2005) written.", "Veritas Corporation: Provided Oracle DBA and PL/SQL development (2003).", "Appfluent Technology: Development for cross-platform (Linux / Solaris / NT) Oracle Call Interface (OCI) driver replacement in C++ (2002)."]
       },
