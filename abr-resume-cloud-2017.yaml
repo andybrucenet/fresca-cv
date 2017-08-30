@@ -1,0 +1,547 @@
+{
+  "name": "Andrew D. Bruce",
+
+  "meta": {
+    "format": "FRESH@0.6.0",
+    "version": "0.4.0"
+  },
+
+  "info": {
+    "label": "Virtualization Engineer",
+    "characterClass": "Programmer",
+    "brief": "As a passionate believer in the power of technology to help our Nation and economy grow, I want to use a cloud-first acquisition model to help customers streamline operations, improve operational efficiencies, and delight the customer.",
+    "image": "andy-smiling-dsci.jpg",
+    "quote": "Life is short. Code hard."
+  },
+
+  "contact": {
+    "website": "http://www.softwareab.net/wordpress/",
+    "phone": "+1.571.232.2424",
+    "email": "andy@softwareab.net",
+    "other": [
+      {
+        "label": "Home Phone",
+        "flavor": "phone",
+        "value": "+1.410.902.6569"
+      },
+      {
+        "label": "Work Phone",
+        "flavor": "phone",
+        "value": "+1.571.232.2424"
+      },
+      {
+        "label": "Personal Email",
+        "flavor": "email",
+        "value": "andybrucenet@gmail.com"
+      }
+    ]
+  },
+
+  "location": {
+    "address": "Andrew D. Bruce\n4409 Silverbrook Lane #304\nOwings Mills, MD  21117",
+    "city": "Owings Mills",
+    "region": "MD",
+    "code": "21117",
+    "country": "US"
+  },
+
+  "projects": [
+    {
+      "title": "Kube-for-Mac",
+      "category": "FOSS",
+      "role": "co-creator",
+      "url": "https://github.com/streamplace/kube-for-mac",
+      "start": "2017-03",
+      "repo": "https://github.com/andybrucenet/kube-for-mac",
+      "description": "Run standalone Kubernetes natively on Mac (no Docker-in-Docker).",
+      "summary": "I maintain and extend this repository to adapt and work with latest Kubernetes versions.",
+      "keywords": ["Kubernetes", "Mac OS X", "scripting"]
+    },
+    {
+      "title": "OpenStack Kolla on Kubernetes",
+      "category": "FOSS",
+      "role": "contributor",
+      "url": "https://wiki.openstack.org/wiki/Kolla",
+      "repo": "https://github.com/openstack/kolla-kubernetes",
+      "description": "Kolla provides production-ready containers and deployment tools for operating OpenStack clouds that are scalable, fast, reliable, and upgradable using community best practices.",
+      "start": "2017-04",
+      "summary": "Adapted kolla-kubernetes to work on Kubernetes hosted on local Mac OS X.",
+      "keywords": ["OpenStack", "Kubernetes", "Mac OS X"]
+    },
+    {
+      "title": "Sunlight Labs C# API",
+      "category": "FOSS",
+      "role": "creator",
+      "url": "https://projects.propublica.org/api-docs/congress-api/",
+      "repo": "https://github.com/andybrucenet/Abr.CodeLibrary.SunlightLabs",
+      "description": "Using the Congress API, you can retrieve legislative data from the House of Representatives, the Senate and the Library of Congress.",
+      "start": "2010-01",
+      "end": "2010-03",
+      "summary": "The Congress API was taken over by ProPublica, but the C# API should still be compatible with the REST calls.",
+      "keywords": ["C#", "Silverlight", "REST"]
+    },
+    {
+      "title": "Various Projects",
+      "category": "FOSS",
+      "role": "creator",
+      "url": "https://www.softwareab.net/softwareab/freeware/index.html",
+      "repo": "https://www.softwareab.net/softwareab/freeware/index.html",
+      "description": "Various C++, Java, Perl, JavaScript, and shell script projects.",
+      "start": "2000-01",
+      "end": "2004-01",
+      "summary": "Created these projects; some are of historical interest and all are entertaining to while away an idle hour.",
+      "keywords": ["C++", "Perl", "Java", "scripting"]
+    },
+
+    {
+      "title": "Blog",
+      "category": "personal",
+      "role": "creator",
+      "url": "https://www.softwareab.net/wordpress/",
+      "description": "Technology and programming blog (Powered by WordPress.)",
+      "summary": "Conceptualization, design, development, and deployment.",
+      "keywords": ["WordPress", "Perl", "PHP", "JavaScript", "HTTP", "Linux"]
+    }
+  ],
+
+  "social": [
+
+    {
+      "label": "GitHub",
+      "network": "GitHub",
+      "user": "andybrucenet",
+      "url": "https://github.com/andybrucenet"
+    },
+
+    {
+      "label": "LinkedIn",
+      "network": "LinkedIn",
+      "user": "andybruce",
+      "url": "http://www.linkedin.com/in/andybruce"
+    }
+  ],
+
+  "employment": {
+
+    "summary": "Team-oriented systems mentor with deep experience in numerous Cloud, hardware, network, storage, software, languages, operating systems, and management capabilities. Excited about turning emerging technology into working production-ready systems. Focused on moving systems teams (infrastructure, admins and developers) to a higher level of world-class solutions development.",
+
+    "history": [
+
+      {
+        "employer": "CloudraticSolutions LLC",
+        "url": "https://www.softwareab.net/wordpress/",
+        "position": "Virtualization Engineer",
+        "summary": "We provide cloud, virtualization, and automation support to companies including [**Leidos**](https://www.leidos.com) and [**Lockheed-Martin**](http://www.lockheedmartin.com/us.html).",
+        "start": "2014-07",
+        "keywords": ["Virtualization", "Automation", "AWS", "OpenStack", "Kubernetes", "OpenShift", "Ansible", "Puppet", "Network", "Cyber", "Storage", "Linux", "Windows"],
+        "highlights": ["Lead all virtualization - both on-prem and off-prem", "Designed / implemented entire infrastructure (OpenStack, network, monitoring, automation)", "Design / build all automation using Puppet, Ansible, CloudFormation, shell scripts", "Assist customer with estimates / technical briefs", "Meet cybersecurity requirements / harden environments"]
+      },
+
+
+      {
+        "employer": "DSCI",
+        "url": "[n/a]",
+        "position": "Technical SME",
+        "summary": "Provided technical expertise for proposal development as well as virtualization engineering.",
+        "start": "2013-09",
+        "end": "2014-07",
+        "keywords": ["Technical Writing","Design","VMware","Linux"],
+        "highlights": ["Created designs and documents related to cloud technology.", "Delivered Information Assurance (IA) artifacts and documentation to Army customer to meet Authority to Operate (ATO) requirements.", "Integrated virtualized environment at APG and Fort Belvoir with all IA requirements: automated scanning, patch management, STIG checklist application.", "Created scripts and procedures to apply IA hardening automatically and efficiently."  ]
+      },
+
+      {
+        "employer": "CSC",
+        "position": "Lead Executive Scientist",
+        "summary": "Provided virtualization development and systems engineering for U.S. Army at Fort Belvoir and Aberdeen Proving Ground.",
+        "start": "2011-06",
+        "end": "2013-09",
+        "keywords": ["VMware","Active Directory","Linux","Windows","Shell","C#"],
+        "highlights": ["Key implementation architect and leader for us.army.mil", "Worked extensively with leading industry cloud vendors: F5 BIG-IP for DNS and load-balancing to backend servers; VMware vCloud Director and Application Fabric Director; full CA/AppLogic implementation to compare and contrast with vSphere; NetApp /HP for backend storage; HDS blades for the on-premises virtualization infrastructure; and, Cisco / Avaya for Layer 2 switch fabric.", "Led successful storage hypervisor virtualization project working directly with DataCore to integrate SANsymphony-V into the Army Cloud infrastructure. Drove this project from concept, to authorization to proceed from Army customer, to implementation, and resulted in a completed Certificate of Networthiness based on my implementation documents and hardening guides.", "Designed and built two virtualization infrastructures for the Army Cloud: CA/AppLogic with first-ever deployment to Hitachi Blades (required reverse engineering AppLogic host ingestion) and a complete vCloud Director environment built on top of vSphere cluster. Compared AppLogic with VMware from performance and security views and recommended VMware to Army customer.", "Led teams building the Army Cloud support infrastructure at APG and Fort Belvoir. Design and lead configuration of all VLANs, switches, routers, storage networks, and all OS-level software stacks (Windows Active Directory, RHEL, HP/Fortify, and numerous others). Managed and created all system and network documentation to meet DoD and Army Information Assurance requirements (DIACAP / DoD 8500.2 / AR25-2). Wrote Puppet scripts to automate processes and to maintain compliance with issued IA Vulnerability Alerts (IAVAs)."]
+      },
+
+      {
+        "employer": "RiVidium Corp",
+        "position": "Chief Technical Officer",
+        "summary": "Led development team in all technology efforts; formulated and expressed technical direction to senior management; presented results to customers.",
+        "start": "2009-05",
+        "end": "2011-06",
+        "keywords": ["SharePoint","Windows","C#","JavaScript","ASP.NET","Silverlight"],
+        "highlights": ["Led all security certification efforts based on CNSSI 1253 and NIST SP800-53 controls.", "Drove development efforts in support of Army Enterprise Architecture for Chief Information Officer / G-6. Member of Army Enterprise Service-Oriented Architecture Foundation.", "Architected / Built C# ASP.NET and Silverlight applications for Army customers", "Designed / Implemented Hyper-V virtualization infrastructure", "Integrated thin desktops with Hyper-V to deliver VDI to RiVidium staff", "Provided estimates and schedules for all work performed by development team", "Presented / defended work to senior management for funding / work authorization on new technology projects"]
+      },
+
+      {
+        "employer": "CSC",
+        "position": "Engineer Principal",
+        "summary": "Completed multiple projects for Army customers at Fort Belvoir and other facilities around the country. Responsible for design, estimates, development, delivery, and maintenance of all technology solutions.",
+        "start": "2006-05",
+        "end": "2009-05",
+        "keywords": ["SharePoint","Windows","C#","JavaScript","ASP.NET","C++","Java","SQL Server"],
+        "highlights": ["Built and maintained the Enterprise Solutions Competency Center at Fort Belvoir", "Created numerous SharePoint sites using C# for all plugins", "Extensive work with SQL Server as backend database", "Implemented first-ever direct CAC authentication with SharePoint (C++ ISAPI DLL); deployed to other Army sites around the country", "Demonstrated SAP automated build / integration on backend VMware stack"]
+      },
+
+      {
+        "employer": "Self-Employed",
+        "position": "Software Consultant",
+        "summary": "Provided development and integration solutions for a variety of customers using best-fit technology and languages.",
+        "start": "2002-11",
+        "end": "2006-05",
+        "keywords": ["C++", "Perl", "Java", "Visual Basic", "Oracle", "SQL Server", "PostgreSQL"],
+        "highlights": ["Tooyen (http://tooyen.com). Developed this online social application (Perl, PostgreSQL) which empowered Amazon sellers by allowing them to reprice their listings automatically (2003-2006).", "CITIdc (Community IT Innovators, http://citidc.com). Provided SQL Server, ASP.NET and DHTML design and development services (2005-2006).", "ePartners Corp: Principal infrastructure architect and technical project leader for the Public Housing Authority Management System (PHAMS, 2002-2005) written.", "Veritas Corporation: Provided Oracle DBA and PL/SQL development (2003).", "Appfluent Technology: Development for cross-platform (Linux / Solaris / NT) Oracle Call Interface (OCI) driver replacement in C++ (2002)."]
+      },
+
+      {
+        "employer": "Appfluent Technology",
+        "position": "Director, Quality Assurance/Configuration Management",
+        "summary": "Lead QA and CM Teams; responsible for automated development / build environments as well as automating tests and integrating bug defect management into the development cycle.",
+        "start": "2001-09",
+        "end": "2002-11",
+        "keywords": ["C++", "Linux", "Oracle", "Perl", "Management"],
+        "highlights": ["Implemented tight integration and accountability between QA and Engineering teams based on NIST SP800-53 and Systems Engineering Lifecycle.", "Provided hands-on technical leadership and development expertise to QA teams for test creation / automation", "Directed CM environments to permit single physical systems to adapt automatically between dev / test / prod environments using the old 'profiles' Linux project", "Presented results to senior management and articulated strategy for forward vision"]
+      },
+
+      {
+        "employer": "EMC Corp",
+        "position": "Software Team Lead",
+        "summary": "Performed software development and mentored junior staff.",
+        "start": "1998-01",
+        "end": "2001-09",
+        "keywords": ["C++", "Java", "Linux", "Oracle", "Perl"],
+        "highlights": ["Managed standard EMC Agent SDK. Platforms for this module included Open Systems (C++, numerous operating systems), Microsoft Windows/NT, Java (numerous platforms), and MVS (SAS/C and Assembler language).", "Created Perl-based automated build environment to optimize system builds across operating system environments"]
+      },
+
+      {
+        "employer": "Savant Corporation / Independent Software Consultant",
+        "position": "Software Developer",
+        "summary": "Performed software development in a variety of languages and platforms.",
+        "start": "1986-11",
+        "end": "1998-01",
+        "keywords": ["C++", "Java", "Linux", "Windows", "Oracle", "SQL Server"],
+        "highlights": ["1998-1999: Implemented custom database analysis engine for Sybase Corp. as a subcontractor with Savant Corp. of Bethesda, MD (C++, Java, CORBA).", "1997-1998: Managed development of eight courses (four Internet-based and four paper-based) for McGrawHill/NRI (see Publications).", "1996-1997: Led development of Savant Corp.’s “Q Diagnostic Viewer.” This tremendously successful product made the “What’s Hot” list for 1997 in InfoWorld (C++).", "1993-1996: Built proprietary database and customized query extraction language, as well as extensive common frameworks development, for Landmark System’s PerformanceWorks suite of products (C++, Perl, Shell).", "1988-1992: Contract programmer for the USPS (Turbo Pascal, C++).", "1986-1988: Trust Accounting software (Microsoft QuickBASIC/Assembler)."]
+      }
+    ]
+
+  },
+
+  "education": {
+
+    "summary": "Security-focused education",
+
+    "level": "degree",
+
+    "degree": "MSIA",
+
+    "history": [
+
+      {
+        "institution": "EC-Council",
+        "title": "CEH",
+        "url": "https://aspen.eccouncil.org/verify.aspx",
+        "start": "2017-02",
+        "end": "2020-02",
+        "summary": "To verify: Use name 'Andrew Donelson Bruce' and Certification Number ECC16919383722"
+      },
+
+      {
+        "institution": "ISC(2)",
+        "title": "CISSP",
+        "url": "https://webportal.isc2.org/custom/certificationverification.aspx",
+        "start": "2010-06",
+        "end": "2019-06",
+        "summary": "To verify: Use name 'Andrew Bruce' and Member ID 363748"
+      },
+
+      {
+        "institution": "PMI",
+        "title": "PMP",
+        "url": "https://certification.pmi.org/registry.aspx",
+        "start": "2010-12",
+        "end": "2019-12",
+        "summary": "To verify: Use name 'Andrew Bruce' and country 'USA' (certification number is 1380110)"
+      },
+
+      {
+        "institution": "FITSI",
+        "title": "FITSP-D",
+        "url": "https://www.fitsi.org/fitsi/cert.asp",
+        "start": "2010-09",
+        "summary": "To verify: Use name 'BRUCE' and Certification # 282"
+      },
+
+      {
+        "institution": "EXIN",
+        "title": "ITILv3",
+        "url": "https://www.exin.com/NL/en/certificate-authentication",
+        "start": "2011-05",
+        "summary": "To verify: Use name 'BRUCE', Certification # 4231761.936515, Module 'ITIL® Foundation Certificate in IT Service Management'"
+      },
+
+      {
+        "institution": "VMware",
+        "title": "VCP5-DV",
+        "url": "https://www.vmware.com",
+        "start": "2013-05",
+        "end": "2015-05",
+        "summary": "VMware 5 DataCenter Virtualization"
+      },
+
+      {
+        "institution": "NetApp",
+        "title": "NetApp Certified Data Administrator, Data ONTAP 7-Mode",
+        "url": "https://www.certmetrics.com/netapp/public/verification.aspx",
+        "start": "2013-06",
+        "summary": "To verify: use Verification Code 'L7D4ZCRCKEE11RS4'"
+      },
+
+      {
+        "institution": "Norwich University",
+        "title": "MSIA",
+        "url": "http://www.norwich.edu/",
+        "start": "2010-07",
+        "end": "2012-06",
+        "grade": "4.0",
+        "summary": "Graduated _summa cum laude_ with a degree granted in Information Assurance. Concentrated on Federal Information Assurance as a cyber-security practitioner.",
+        "curriculum": ["Network Security Management", "Risk Management", "Emergency Response Management"]
+      },
+
+      {
+        "institution": "Strayer University",
+        "title": "BS/CIS",
+        "url": "http://www.strayer.edu/",
+        "start": "1991-09",
+        "end": "1993-05",
+        "grade": "3.9",
+        "summary": "Graduated _summa cum laude_ with a degree granted in Computer Information Systems.",
+        "curriculum": ["Various programming courses", "Software Development Management", "Various humanities cruft..."]
+      },
+
+      {
+        "institution": "State Technical Institute",
+        "title": "AS/MIS",
+        "url": "http://www.southwest.tn.edu/",
+        "start": "1985-09",
+        "end": "1988-05",
+        "grade": "3.75",
+        "summary": "Graduated _cum laude_ with a degree granted in Management Information Systems.",
+        "curriculum": ["C Programming", "Assembler Programming", "COBOL Programming", "Accounting"]
+      }
+    ]
+
+  },
+
+  "affiliation": {
+    "summary": "Member of numerous collegiate and professional groups and organizations.",
+    "history": [
+      {
+        "role": "Member",
+        "organization": "Upsilon Pi Epsilon",
+        "url": "http://upe.acm.org",
+        "start": "2012-06",
+        "summary": "Achieved membership based on performance at Norwich University."
+      },
+      {
+        "role": "Member",
+        "organization": "ISC(2)",
+        "url": "https://www.isc2.org/",
+        "start": "2010-06",
+        "summary": "Member in good standing."
+      },
+      {
+        "role": "Member",
+        "organization": "FITSI",
+        "url": "http://fitsi.org/",
+        "start": "2010-09",
+        "summary": "Member in good standing."
+      },
+      {
+        "role": "Member",
+        "organization": "PMI",
+        "start": "2010-12",
+        "summary": "Member in good standing."
+      }
+    ]
+  },
+
+  "skills": {
+
+    "sets": [
+      {
+        "name": "Cloud",
+        "level": "advanced",
+        "skills": [
+          "AWS (multiple associate certs in progress)"
+        ]
+      },
+      {
+        "name": "Virtualization",
+        "level": "master",
+        "skills": [
+          "OpenStack", "VMware", "Hyper-V"
+        ]
+      },
+      {
+        "name": "Containers",
+        "level": "advanced",
+        "skills": [
+          "Docker", "Kubernetes", "OpenShift", "Docker Swarm"
+        ]
+      },
+      {
+        "name": "Storage",
+        "level": "advanced",
+        "skills": [
+          "Ceph", "iSCSI", "NFS"
+        ]
+      },
+      {
+        "name": "Scripting",
+        "level": "master",
+        "skills": [
+          "Shell (Linux)", "PowerShell", "Perl", "Python"
+        ]
+      },
+      {
+        "name": "Automation / Configuration Management",
+        "level": "advanced",
+        "skills": [
+          "Puppet", "Ansible", "AWS CloudFormation"
+        ]
+      },
+      {
+        "name": "Programming",
+        "level": "advanced",
+        "skills": [
+          "C++", "C#", "Java"
+        ]
+      },
+      {
+        "name": "Database",
+        "level": "intermediate",
+        "skills": [
+          "MySQL", "PostgreSQL", "SQL Server"
+        ]
+      },
+      {
+        "name": "Infrastructure",
+        "level": "advanced",
+        "skills": [
+          "Switches (HP / Dell / Cisco)", "Routing", "VLAN Segmentation"
+        ]
+      },
+      {
+        "name": "Project",
+        "level": "advanced",
+        "skills": [
+          "Agile", "TFS", "JIRA", "Redmine", "GitHub", "MS Project"
+        ]
+      }
+    ]
+  },
+
+  "samples": [
+    {
+      "title": "Kubernetes / dex Dashboards",
+      "summary": "Enable isolated Kubernetes dashboards with dex backend authentication (https://github.com/andybrucenet/kube-dex-dashboard).",
+      "url": "https://github.com/andybrucenet/kube-dex-dashboard",
+      "date": "2017-08"
+    },
+    {
+      "title": "compliance-masonry",
+      "summary": "Contributed 'export' verb to export data for processing by other tools (https://github.com/andybrucenet/compliance-masonry).",
+      "url": "https://github.com/andybrucenet/compliance-masonry",
+      "date": "2017-08"
+    },
+    {
+      "title": "Customized Jenkins Slave",
+      "summary": "Example of Docker container to extend Maven builds under Jenkins pipeline (https://github.com/andybrucenet/jenkins-slave-maven-nodejs).",
+      "url": "https://github.com/andybrucenet/jenkins-slave-maven-nodejs",
+      "date": "2017-07"
+    },
+    {
+      "title": "Run jinja2 as Docker Container",
+      "summary": "Example on how to create minimized, Alpine-based Docker image to run jinja2 (https://github.com/andybrucenet/jinja2).",
+      "url": "https://github.com/andybrucenet/jinja2",
+      "date": "2017-08"
+    },
+    {
+      "title": "Kubernetes on Mac",
+      "summary": "Kubernetes running on Docker for Mac natively (https://github.com/andybrucenet/kube-for-mac).",
+      "url": "https://github.com/andybrucenet/kube-for-mac",
+      "date": "2017-04"
+    }
+  ],
+
+  "writing": [
+    {
+      "title": "Information Assurance Whitepapers",
+      "flavor": "article",
+      "date": "2012",
+      "publisher": {
+        "name": "softwareab.net",
+        "url": "https://www.softwareab.net/wordpress/lets-go-ia-whitepapers/"
+      },
+      "url": "https://www.softwareab.net/wordpress/lets-go-ia-whitepapers/",
+      "author": [ "Andrew Bruce"],
+      "summary": "Whitepapers on Information Assurance within the Federal IT Community of Practice (https://www.softwareab.net/wordpress/lets-go-ia-whitepapers/)."
+    },
+    {
+      "title": "IA FUSION - Fusing IA into the Software Development Model",
+      "flavor": "article",
+      "date": "2011",
+      "publisher": {
+        "name": "FITSI",
+        "url": "http://fitsi.org"
+      },
+      "url": "https://www.fitsi.org/activek/content.asp?s=XRXIZZPOLZ170829601462&catid=24",
+      "summary": "FITSI membership required; model to integrate security into the development process (http://fitsi.org/)."
+    },
+    {
+      "title": "Andrew Bruce's Blog",
+      "flavor": "blog",
+      "date": "2011",
+      "publisher": {
+        "name": "self",
+        "url": "http://softwareab.net/wordpress/"
+      },
+      "url": "http://softwareab.net/wordpress/",
+      "summary": "Numerous articles on computer technologies and projects (http://softwareab.net/wordpress/)."
+    }
+  ],
+
+  "recognition": [
+    {
+      "flavor": "honor",
+      "from": "Norwich University",
+      "title": "Summa cum laude",
+      "event": "graduation",
+      "date": "2012"
+    }
+  ],
+
+  "languages": [
+    {
+      "language": "English",
+      "level": "Native"
+    }
+  ],
+
+  "extracurricular": [
+    {
+      "title": "Jazz Workshop",
+      "activity": "Jazz piano",
+      "location": "Randallstown, MD",
+      "start": "2017-01"
+    }
+  ],
+
+  "governance": [
+    {
+      "flavor": "board",
+      "role": "Member",
+      "organization": "FITSI Certification Committee",
+      "url": "http://fitsi.org",
+      "start": "2016-08",
+      "summary": "Review FITSI exams and applications to validate completeness and accuracy."
+    }
+  ]
+}
+
