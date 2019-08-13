@@ -4,7 +4,7 @@ all: build
 
 build: env-setup
 	#@for i in $$(ls out/) ; do hackmyresume BUILD abr-resume-cloud-2017.yaml out/$$i/resume.all -t $$i ; done
-	@hackmyresume BUILD abr-resume-cloud-2017.yaml TO out/modern/resume.all -t ./themes/modern
+	@hackmyresume BUILD abr-resume-cloud-leidos.yaml TO out/modern/resume.all -t ./themes/modern
 
 clean: env-setup
 	@for i in $$(ls out/) ; do rm -fR ./out/$$i/* ; done
