@@ -1,10 +1,11 @@
-.PHONY: all build clean rebuild analyze env-setup node-setup
+.PHONY: all build clean rebuild analyze env-setup node-setup hackmyresume_check
 
 all: build
 
 build: env-setup
 	@#for i in $$(ls out/) ; do hackmyresume BUILD abr-resume-cloud-2017.json out/$$i/resume.all -t $$i ; done
-	@hackmyresume BUILD abr-resume-cloud-leidos.json TO out/modern/resume.all -t ./themes/modern
+	@hackmyresume BUILD abr-resume-cloud-2023.json TO out/modern/resume.all -t ./themes/modern
+	@#hackmyresume BUILD abr-resume-cloud-sab-2020.json TO out/modern/resume.all -t ./themes/modern
 	@#hackmyresume BUILD abr-resume-cloud-leidos.json TO out/material/resume.all -t node_modules/jsonresume-theme-material
 	@#hackmyresume BUILD abr-resume-cloud-leidos.json TO out/macchiato/resume.all -t node_modules/jsonresume-theme-macchiato
 	@#hackmyresume BUILD abr-resume-cloud-leidos.json TO out/a11y/resume.all -t node_modules/jsonresume-theme-a11y
@@ -26,6 +27,9 @@ env-setup: node-setup
 
 node-setup: node_modules
 
-node_modules:
-	@npm install jsonresume-theme-material jsonresume-theme-macchiato jsonresume-theme-a11y jsonresume-theme-orbit
+node_modules: hackmyresume_check
+	@npm install jsonresume-theme-material jsonresume-theme-macchiato jsonresume-theme-a11y jsonresume-theme-orbit -g
+
+hackmyresume_check:
+	@./scripts/auto-setup-hackmyresume.sh
 

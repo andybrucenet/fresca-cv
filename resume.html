@@ -1,0 +1,1624 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Andrew D. Bruce</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  <style>
+  /********************************************
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/****************
+*	COMMONS
+****************/
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 13px;
+  color: #40484f;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.46153846;
+  text-align: left;
+}
+
+p {
+  display: block;
+}
+
+a {
+  color: #0095ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0c65a5;
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: outside;
+  margin-left: 1.3em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.67rem;
+}
+
+h3 {
+  font-size: 1.27rem;
+}
+
+em {
+  color: #757575;
+}
+
+blockquote {
+  margin-bottom: 1em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* main container */
+
+#resume {
+  padding: 1.5rem;
+}
+
+/* every section wrapper */
+
+.section {
+  margin-bottom: 1rem;
+}
+
+section .location {
+  margin-right: 0.5em;
+  color: #606d76;
+  font-weight: 700;
+}
+
+#contact {
+  margin-top: 0.5rem;
+}
+
+#profiles .item {
+  padding: 0;
+}
+
+#header > #profiles,
+#header > #contact,
+#skills,
+#languages,
+#interests {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+#header > div {
+  line-height: 1.5;
+}
+
+#header > div > div {
+  margin-right: 1.2em;
+}
+
+#header h1.name {
+  font-size: 2.8rem;
+  font-weight: 100;
+  line-height: 100%;
+}
+
+#header h2.label {
+  color: #202931;
+  font-size: 1.47rem;
+  font-weight: 300;
+}
+
+#header .image {
+  width: 11em;
+  float: right;
+  border-radius: 4px;
+}
+
+.main-summary {
+  background: #f1f8ff;
+  padding: 1.2em 1em;
+  margin-top: 1rem;
+}
+
+.main-summary p {
+  margin: 0;
+}
+
+.section-title {
+  display: inline-block;
+  background: #fff;
+  padding: 0 1em 0.3em 0;
+  color: #ff6d1f;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  font-size: 0.9rem;
+}
+
+.section > header {
+  position: relative;
+}
+
+.fa {
+  margin-right: 0.25em;
+}
+
+.section > header::after {
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  height: 1px;
+  background: #ccc;
+  content: "";
+  width: 100%;
+  z-index: -100;
+  display: block;
+}
+
+.section.main-summary > section {
+  margin: 0;
+}
+
+.section > section > header {
+  font-size: 1.38rem;
+  position: relative;
+  margin-top: 0.7em;
+}
+
+.section > section > header:first-of-type {
+  margin: 0;
+}
+
+.section > section > header .space-left {
+  position: absolute;
+  left: -1.56rem;
+  top: 5px;
+  color: #aaa;
+  line-height: 1;
+  opacity: 0;
+}
+
+.position,
+.company,
+.organization,
+.institution,
+.date,
+.area,
+.studyType,
+.title,
+.awarder {
+  display: inline;
+}
+
+.position,
+.studyType,
+.area,
+.title,
+.language,
+.name {
+  font-weight: 600;
+}
+
+.company::before,
+.institution::before,
+.organization::before,
+.awarder::before {
+  content: "at ";
+}
+
+.company,
+.institution,
+.organization,
+.awarder {
+  color: #606d76;
+  font-weight: 400;
+}
+
+.section header .date {
+  display: block;
+  font-size: 1rem;
+  padding: 0.1em 0;
+  color: #606d76;
+  font-weight: 400;
+}
+
+.keywords,
+.courses {
+  margin: 0.5em 0;
+}
+
+.keywords li,
+.courses li {
+  display: inline-block;
+  margin: 2px 2px 2px 0;
+  padding: 4px 5px 5px;
+  font-size: 0.9rem;
+  line-height: 1;
+  color: #3e6d8e;
+  background-color: #dfeaf1;
+  border: 0 solid #dfeaf1;
+  white-space: nowrap;
+}
+
+.keywords li:hover,
+.courses li:hover {
+  background: #dfeaf0;
+}
+
+.highlights {
+  margin: 1em 0 0 0;
+}
+
+.highlights > li > p {
+  margin-bottom: 0.5em;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.gpa {
+  clear: both;
+  padding-bottom: 0.5em;
+}
+
+.fa.social {
+  font-size: 1.1em;
+}
+
+/* Social Media Brand Colors */
+
+.google-plus {
+  color: #dd4b39;
+}
+
+.tumblr {
+  color: #32506d;
+}
+
+.foursquare {
+  color: #0072b1;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.linkedin {
+  color: #007bb6;
+}
+
+.pinterest {
+  color: #cb2027;
+}
+
+.dribbble {
+  color: #ea4c89;
+}
+
+.instagram {
+  color: #517fa4;
+}
+
+.twitter {
+  color: #00aced;
+}
+
+.soundcloud {
+  color: #ff3a00;
+}
+
+.wordpress {
+  color: #21759b;
+}
+
+.youtube {
+  color: #bb0000;
+}
+
+.github {
+  color: #171515;
+}
+
+.stack-overflow {
+  color: #828386;
+  position: relative;
+}
+
+.flickr {
+  color: #ff0084;
+}
+
+.reddit {
+  color: #ff4500;
+}
+
+.hacker-news {
+  color: #ff6600;
+}
+
+.stack-overflow::after {
+  position: absolute;
+  left: 0;
+  content: "\f16c";
+  color: #f68a1f;
+  overflow: hidden;
+  height: 100%;
+}
+
+.telegram {
+  color: #2291c3;
+}
+
+#languages .item,
+#skills .item,
+#interests .item {
+  width: 15em;
+  padding: 0 0.5em 0.5em 0;
+  border-bottom: none;
+}
+
+#skills .item {
+  width: 16em;
+}
+
+#skills .item .keywords {
+  width: 15em;
+}
+
+/* Skill chart */
+
+.level {
+  margin-bottom: 0.5em;
+}
+
+.level em {
+  padding-left: 0.2em;
+}
+
+.level .bar {
+  border: 1px solid #ddd;
+  display: block;
+  width: 10em;
+  height: 5px;
+  position: relative;
+}
+
+.level .bar::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  background: black;
+  height: 5px;
+}
+
+.level.beginner .bar::after {
+  background: #eb5f51;
+  width: 2.5em;
+}
+
+.level.intermediate .bar::after {
+  background: #ffdf1f;
+  width: 5em;
+}
+
+.level.advanced .bar::after,
+.level.fluent .bar::after {
+  background: #5cb85c;
+  width: 7.5em;
+}
+
+.level.master .bar::after,
+.level.native.speaker .bar::after {
+  background: #59c596;
+  width: 10em;
+}
+
+#references .item {
+  padding-left: 0.5em;
+  border-left: 5px solid #ff6d1f;
+}
+
+.section > section > section {
+  margin-bottom: 1rem;
+}
+
+/******************
+*	HELPER CLASSES
+******************/
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.display {
+  display: block;
+  opacity: 1 !important;
+}
+
+/****************
+*		TABLET
+****************/
+
+@media screen and (min-width: 602px) {
+  #resume {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .section header .date {
+    float: right;
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+/****************
+*		LAPTOP
+****************/
+
+@media screen and (min-width: 1025px) {
+  li {
+    margin-left: 1.5em;
+  }
+  #resume {
+    width: 820px;
+    margin: 2rem auto;
+  }
+  .section > section > header .space-left {
+    opacity: 1;
+    cursor: pointer;
+  }
+  .section > section:not(.main-summary) {
+    margin-left: 1.67rem;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "| ";
+  }
+  .header-left {
+    float: left;
+    width: 70%;
+    word-break: normal;
+  }
+  .section header .date {
+    padding: 0.2em;
+  }
+  .display {
+    display: none;
+  }
+  .display:not(.none) {
+    display: block;
+  }
+}
+
+@media print {
+  #profiles a:not(.hide-href-print)::after{
+    content: " (" attr(href) ") ";
+  }
+  #resume {
+    margin: 0.1em;
+    padding: 0.1em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.25;
+  }
+  @page {
+    margin: 1cm 1.4cm;
+  }
+  .item-count {
+    display: none;
+  }
+  .company::before,
+  .institution::before,
+  .organization::before,
+  .awarder::before {
+    content: "at ";
+  }
+  .main-summary {
+    padding: 0;
+    background: transparent;
+  }
+  .section {
+    margin: 0.8rem 0;
+    padding: 0;
+  }
+  .section header {
+    padding-bottom: 0.15rem;
+  }
+  .section .location {
+    padding-bottom: 0.15rem;
+  }
+  .section > section > section {
+    margin: 0 0 1em 0;
+  }
+  .section > section > section:last-of-type {
+    margin: 0;
+  }
+  .stack-overflow::after {
+    content: "";
+  }
+  .fa.social {
+    color: #828386;
+  }
+  ul {
+    margin-top: 0.4em;
+  }
+  ul,
+  li {
+    padding: 0;
+  }
+  ul.keywords li,
+  ul.courses li {
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    background: transparent;
+  }
+  ul.keywords li::after,
+  ul.courses li::after {
+    padding: 0 0 0 0.1rem;
+    content: " |";
+  }
+  ul.keywords::before,
+  ul.courses::before {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  #skills .item {
+    width: calc(100% / 3);
+    padding: 0;
+  }
+  .highlights {
+    margin: 0.5em 0 0 0;
+  }
+  ul.keywords::before {
+    content: "Skills acquired: ";
+  }
+  #skills .keywords::before {
+    content: none;
+  }
+  .section p {
+    margin: 0;
+    padding: 0;
+  }
+  ul.courses::before {
+    content: "Major courses: ";
+  }
+  ul.keywords li:last-of-type::after,
+  ul.courses li:last-of-type::after {
+    content: "";
+  }
+  .level em {
+    font-style: normal;
+    padding: 0.1em 0;
+  }
+  .level .bar {
+    display: none;
+  }
+  #profiles .item {
+    padding: 0;
+  }
+  .item.display {
+    display: block;
+    opacity: 1 !important;
+  }
+  .fa-map-marker-alt:before {
+    padding-left: 0.1em;
+  }
+}
+
+  </style>
+  
+  </head>
+  <body>
+  
+  <div id="resume">
+    	<header id="header" class="clear">
+    		<div>
+    			<h1 class="name">Andrew D. Bruce</h1>
+    			<h2 class="label">Software/Cloud Engineer</h2>
+    		</div>
+    
+    		<span class="location">
+    			<span class="address">5828 N Church St,</span>
+    			<span class="postalCode">PA 17327,</span>
+    			<span class="city">Glen Rock,</span>
+    			<span class="countryCode">US</span>
+    		</span>
+    
+    
+    		<div id="contact">
+    			<div class="email">
+    				<span class="far fa-envelope"></span>
+    				<a class="hide-href-print" href="mailto:andybrucenet@gmail.com">andybrucenet@gmail.com</a>
+    			</div>
+    		</div>
+    
+    		<div id="profiles">
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-github github social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://github.com/andybrucenet">andybrucenet</a>
+    					</span>
+    				</div>
+    			</div>
+    			<div class="item">
+    				<div class="username">
+    					<span class="fab fa-linkedin linkedin social"></span>
+    					<span class="url">
+    						<a target="_blank" href="https://www.linkedin.com/in/andybruce">andybruce</a>
+    					</span>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+    
+    	<section class="section">
+    		<section class="main-summary">
+    			<div><p><p>I am a passionate believer in the power of technology to increase productivity and to reduce costs. I want to use my demonstrated software development, cloud, virtualization and automation capabilities to help your organization streamline its daily operations, continuously improve its technical environment, assist in delivering highest-quality products on time and in budget, and delight your end-customer.</p></p></div>
+    		</section>
+    	</section>
+    
+    <section class="section">
+    	<header>
+    		<h2 class='section-title'>Skills</h2>
+    	</header>
+    	<section id="skills">
+    		<div class="item">
+    			<h3 class="name">
+    				Cloud
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>AWS</li>
+    				<li>Azure</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Virtualization
+    			</h3>
+    			 
+    			<div class="level master">
+    				<em>master</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>OpenStack</li>
+    				<li>VMware</li>
+    				<li>Hyper-V</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Containers
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Docker</li>
+    				<li>Kubernetes</li>
+    				<li>OpenShift</li>
+    				<li>Docker Swarm</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Storage
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Ceph</li>
+    				<li>iSCSI</li>
+    				<li>NFS</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Scripting
+    			</h3>
+    			 
+    			<div class="level master">
+    				<em>master</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Shell (Linux)</li>
+    				<li>PowerShell</li>
+    				<li>Perl</li>
+    				<li>Python</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Automation / Configuration Management
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Puppet</li>
+    				<li>Ansible</li>
+    				<li>AWS CloudFormation</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Programming
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>C++</li>
+    				<li>C#</li>
+    				<li>Java</li>
+    				<li>Swift</li>
+    				<li>Objective-C</li>
+    				<li>Kotlin</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Database
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>MySQL</li>
+    				<li>PostgreSQL</li>
+    				<li>SQL Server</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Infrastructure
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Switches (HP / Dell / Cisco)</li>
+    				<li>Routing</li>
+    				<li>VLAN Segmentation</li>
+    			</ul>
+    		</div>
+    		<div class="item">
+    			<h3 class="name">
+    				Project
+    			</h3>
+    			 
+    			<div class="level advanced">
+    				<em>advanced</em>
+    				<div class="bar"></div>
+    			</div>
+    			<ul class="keywords">
+    				<li>Agile</li>
+    				<li>TFS</li>
+    				<li>JIRA</li>
+    				<li>Redmine</li>
+    				<li>GitHub</li>
+    				<li>MS Project</li>
+    			</ul>
+    		</div>
+    	</section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Work Experience <span class="item-count">(9)</span></h2>
+      </header>
+    
+      <section id="work">
+        <section class="work-item">
+    
+          <label for="work-item-0"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jul 2020</span>
+              <span class="endDate">- Current</span>
+            </div>
+            <div class="position">Software / Azure Engineer</div>
+            <div class="company">TripleCyber Corp.</div>
+          </header>
+    
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.triplecyber.com">https://www.triplecyber.com</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>I develop proprietary software for .NET (C#) and Mobile (Kotlin/Swift/Objective-C). I created and manage the entire system automated build / integration testing leveraging Azure DevOps for hosting. My daily tasks include leading Team developers, developing backend cross-platform libraries for delivery to other software Teams, generating monthly sprint software releases and demonstrating sprint releases to stakeholders. My solutions rely heavily on test-driven development and maintaining automated developer-specific environments which can be spun up or down on a single command. I write much of the software technical documentation delivered to the wider Team in addition to maintaining up-to-date READMEs for each of the library projects I am responsible for.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Develop C# backend support libraries loadable by native Android/iOS apps</p></p></li>
+              <li><p><p>Lead all system engineering including builds / software packaging / automation / cloud management</p></p></li>
+              <li><p><p>Integrate automated production hosting capabilities with corporate Azure account including scalesets and automated versionable updates</p></p></li>
+              <li><p><p>Built Word / Outlook COM addins using C# which integrate TripleCyber's security products seamlessly</p></p></li>
+              <li><p><p>Develop cross-platform service to run TripleCyber's security product on Windows / Mac / Linux as well as all support applications (e.g. Command-Line Interface and Service Management tools)</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-1"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jul 2014</span>
+              <span class="endDate">- Jun 2020</span>
+            </div>
+            <div class="position">Virtualization Engineer</div>
+            <div class="company">Leidos</div>
+          </header>
+    
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.leidos.com/">https://www.leidos.com/</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>I provided cloud, virtualization, network and automation support to assist Leidos with Government and commercial customers. My primary responsibilities included managing and supporting DevOps within the Leidos Managed Innovation Lab in Baltimore, MD.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Lead all virtualization - both on-prem and off-prem</p></p></li>
+              <li><p><p>Designed / implemented entire infrastructure (OpenStack, network, monitoring, automation)</p></p></li>
+              <li><p><p>Design / build all automation using Puppet, Chef, Cobbler, CloudFormation, shell scripts</p></p></li>
+              <li><p><p>Assist customer with estimates</p></p></li>
+              <li><p><p>Create and present technical briefs (internal and external)</p></p></li>
+              <li><p><p>Meet cybersecurity requirements / harden environments</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-2"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Sep 2013</span>
+              <span class="endDate">- Jul 2014</span>
+            </div>
+            <div class="position">Technical Subject Matter Expert (SME)</div>
+            <div class="company">DSCI</div>
+          </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p><p>Provided technical expertise for proposal development as well as virtualization engineering.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Created designs and documents related to cloud technology.</p></p></li>
+              <li><p><p>Delivered Information Assurance (IA) artifacts and documentation to Army customer to meet Authority to Operate (ATO) requirements.</p></p></li>
+              <li><p><p>Integrated virtualized environment at Aberdeen Proving Ground and Fort Belvoir with all IA requirements: automated scanning, patch management, Security Technical Implementation Guide (STIG) checklist application.</p></p></li>
+              <li><p><p>Created scripts and procedures to apply IA hardening automatically and efficiently.</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-3"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jun 2009</span>
+              <span class="endDate">- May 2011</span>
+            </div>
+            <div class="position">Chief Technical Officer</div>
+            <div class="company">RiVidium Corp</div>
+          </header>
+    
+          <span class="url">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.rividium.com">https://www.rividium.com</a>
+          </span>        <div class="item" id="work-item">
+            <div class="summary"><p><p>Led development team in all technology efforts; formulated and expressed technical direction to senior management; presented results to customers.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Led all security certification efforts based on CNSSI 1253 and NIST SP800-53 controls.</p></p></li>
+              <li><p><p>Drove development efforts in support of Army Enterprise Architecture for Chief Information Officer / G-6. Member of Army Enterprise Service-Oriented Architecture Foundation.</p></p></li>
+              <li><p><p>Architected / Built C# ASP.NET and Silverlight applications for Army customers</p></p></li>
+              <li><p><p>Designed / Implemented Hyper-V virtualization infrastructure</p></p></li>
+              <li><p><p>Integrated thin desktops with Hyper-V to deliver VDI to RiVidium staff</p></p></li>
+              <li><p><p>Provided estimates and schedules for all work performed by development team</p></p></li>
+              <li><p><p>Presented / defended work to senior management for funding / work authorization on new technology projects</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-4"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">May 2006</span>
+              <span class="endDate">- May 2009</span>
+            </div>
+            <div class="position">Engineer Principal</div>
+            <div class="company">Computer Sciences Corp (CSC)</div>
+          </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p><p>Completed multiple projects for Army customers at Fort Belvoir and other facilities around the country. Responsible for design, estimates, development, delivery, and maintenance of all technology solutions.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Built and maintained the Enterprise Solutions Competency Center at Fort Belvoir</p></p></li>
+              <li><p><p>Created numerous SharePoint sites using C# for all plugins</p></p></li>
+              <li><p><p>Extensive work with SQL Server as backend database</p></p></li>
+              <li><p><p>Implemented first-ever direct CAC authentication with SharePoint (C++ ISAPI DLL); deployed to other Army sites around the country</p></p></li>
+              <li><p><p>Demonstrated SAP automated build / integration on backend VMware stack</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-5"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Nov 2002</span>
+              <span class="endDate">- Apr 2006</span>
+            </div>
+            <div class="position">Independent Software Consultant</div>
+            <div class="company">softwareAB</div>
+          </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p><p>Provided development and integration solutions for a variety of customers using best-fit technology and languages.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Tooyen (http://tooyen.com). Developed this online social application (Perl, PostgreSQL) which empowered Amazon sellers by allowing them to reprice their listings automatically (2003-2006).</p></p></li>
+              <li><p><p>CITIdc (Community IT Innovators, http://citidc.com). Provided SQL Server, ASP.NET and DHTML design and development services (2005-2006).</p></p></li>
+              <li><p><p>ePartners Corp: Principal infrastructure architect and technical project leader for the Public Housing Authority Management System (PHAMS, 2002-2005) written.</p></p></li>
+              <li><p><p>Veritas Corporation: Provided Oracle DBA and PL/SQL development (2003).</p></p></li>
+              <li><p><p>Appfluent Technology: Development for cross-platform (Linux / Solaris / NT) Oracle Call Interface (OCI) driver replacement in C++ (2002).</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-6"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Sep 2001</span>
+              <span class="endDate">- Nov 2002</span>
+            </div>
+            <div class="position">Director, Quality Assurance/Configuration Management</div>
+            <div class="company">Appfluent Technology</div>
+          </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p><p>Lead QA and CM Teams; responsible for automated development / build environments as well as automating tests and integrating bug defect management into the development cycle.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Implemented tight integration and accountability between QA and Engineering teams based on NIST SP800-53 and Systems Engineering Lifecycle.</p></p></li>
+              <li><p><p>Provided hands-on technical leadership and development expertise to QA teams for test creation / automation</p></p></li>
+              <li><p><p>Directed CM environments to permit single physical systems to adapt automatically between dev / test / prod environments using the old 'profiles' Linux project</p></p></li>
+              <li><p><p>Presented results to senior management and articulated strategy for forward vision</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+          <label for="work-item-7"></label>
+    
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">Jan 1998</span>
+              <span class="endDate">- Sep 2001</span>
+            </div>
+            <div class="position">Software Team Lead</div>
+            <div class="company">EMC Corp</div>
+          </header>
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p><p>Performed software development and mentored junior staff.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>Managed standard EMC Agent SDK. Platforms for this module included Open Systems (C++, numerous operating systems), Microsoft Windows/NT, Java (numerous platforms), and MVS (SAS/C and Assembler language).</p></p></li>
+              <li><p><p>Created Perl-based automated build environment to optimize system builds across operating system environments</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="work-item">
+    
+           <div class="item" id="work-item">
+            <div class="summary"><p><p>Performed software development in a variety of languages and platforms.</p></p></div>
+            <ul class="highlights">
+              <li><p><p>1998-1999: Implemented custom database analysis engine for Sybase Corp. as a subcontractor with Savant Corp. of Bethesda, MD (C++, Java, CORBA).</p></p></li>
+              <li><p><p>1997-1998: Managed development of eight courses (four Internet-based and four paper-based) for McGrawHill/NRI (see Publications).</p></p></li>
+              <li><p><p>1996-1997: Led development of Savant Corp.’s “Q Diagnostic Viewer.” This tremendously successful product made the “What’s Hot” list for 1997 in InfoWorld (C++).</p></p></li>
+              <li><p><p>1993-1996: Built proprietary database and customized query extraction language, as well as extensive common frameworks development, for Landmark System’s PerformanceWorks suite of products (C++, Perl, Shell).</p></p></li>
+              <li><p><p>1988-1992: Contract programmer for the USPS (Turbo Pascal, C++).</p></p></li>
+              <li><p><p>1986-1988: Trust Accounting software (Microsoft QuickBASIC/Assembler).</p></p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Projects <span class="item-count">(5)</span></h2>
+      </header>
+      <section id="projects">
+        <section class="project-item">
+            <label for="project-item-0"></label>
+    
+          <header class="clear">
+            <div class="position">Kube-for-Mac</div>
+            <div class="date">
+              <span class="startDate">Mar 2017</span>
+              <span class="endDate">- Current</span>
+            </div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://github.com/streamplace/kube-for-mac">https://github.com/streamplace/kube-for-mac</a>
+          </span>
+          <div class="item">
+              <div class="summary"><p><p>Run standalone Kubernetes natively on Mac (no Docker-in-Docker).</p></p></div>
+            <ul class="highlights">
+                <li><p><p>Kubernetes,</p></p></li>
+                <li><p><p>Mac OS X,</p></p></li>
+                <li><p><p>Scripting</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+            <label for="project-item-1"></label>
+    
+          <header class="clear">
+            <div class="position">OpenStack Kolla on Kubernetes</div>
+            <div class="date">
+              <span class="startDate">Apr 2017</span>
+              <span class="endDate">- Current</span>
+            </div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://wiki.openstack.org/wiki/Kolla">https://wiki.openstack.org/wiki/Kolla</a>
+          </span>
+          <div class="item">
+              <div class="summary"><p><p>Kolla provides production-ready containers and deployment tools for operating OpenStack clouds that are scalable, fast, reliable, and upgradable using community best practices.</p></p></div>
+            <ul class="highlights">
+                <li><p><p>OpenStack,</p></p></li>
+                <li><p><p>Kubernetes,</p></p></li>
+                <li><p><p>Mac OS X</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+            <label for="project-item-2"></label>
+    
+          <header class="clear">
+            <div class="position">Sunlight Labs C# API</div>
+            <div class="date">
+              <span class="startDate">Jan 2010</span>
+              <span class="endDate">- Current</span>
+            </div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://projects.propublica.org/api-docs/congress-api/">https://projects.propublica.org/api-docs/congress-api/</a>
+          </span>
+          <div class="item">
+              <div class="summary"><p><p>Using the Congress API, you can retrieve legislative data from the House of Representatives, the Senate and the Library of Congress.</p></p></div>
+            <ul class="highlights">
+                <li><p><p>C#,</p></p></li>
+                <li><p><p>Silverlight,</p></p></li>
+                <li><p><p>REST</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+            <label for="project-item-3"></label>
+    
+          <header class="clear">
+            <div class="position">Various Projects</div>
+            <div class="date">
+              <span class="startDate">Jan 2000</span>
+              <span class="endDate">- Jan 2004</span>
+            </div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.softwareab.net/softwareab/freeware/index.html">https://www.softwareab.net/softwareab/freeware/index.html</a>
+          </span>
+          <div class="item">
+              <div class="summary"><p><p>Various C++, Java, Perl, JavaScript, and shell script projects.</p></p></div>
+            <ul class="highlights">
+                <li><p><p>C++,</p></p></li>
+                <li><p><p>Perl,</p></p></li>
+                <li><p><p>Java,</p></p></li>
+                <li><p><p>Scripting</p></p></li>
+            </ul>
+          </div>
+        </section>
+        <section class="project-item">
+            <label for="project-item-4"></label>
+    
+          <header class="clear">
+            <div class="position">Technology Blog</div>
+          </header>
+          <span class="website">
+            <span class="fas fa-external-link-alt"></span>
+            <a target="_blank" href="https://www.softwareab.net/wordpress/">https://www.softwareab.net/wordpress/</a>
+          </span>
+          <div class="item">
+              <div class="summary"><p><p>Technology and programming blog (Powered by WordPress.)</p></p></div>
+            <ul class="highlights">
+                <li><p><p>WordPress,</p></p></li>
+                <li><p><p>Perl,</p></p></li>
+                <li><p><p>PHP,</p></p></li>
+                <li><p><p>JavaScript,</p></p></li>
+                <li><p><p>HTTP,</p></p></li>
+                <li><p><p>Linux</p></p></li>
+            </ul>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Volunteer</h2>
+      </header>
+      <section id="volunteer">
+        <section class="volunteer-item">
+    
+          <label for="volunteer-item-0"></label>
+    
+          <header class="clear">
+             <div class="date">
+              <span class="endDate">
+                - Current
+              </span>
+            </div>
+            <div class="header-left">
+              <div class="position">
+                Board Member
+              </div>
+              <div class="organization">
+                FITSI Certification Committee
+              </div>
+            </div>
+           
+          </header>
+          <div class="item">
+            <div class="summary"><p><p>Review FITSI exams and applications to validate completeness and accuracy.</p></p></div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title'>Education <span class="item-count">(2)</span></h2>
+      </header>
+    
+      <section id="education">
+        <section class="education-item">
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              2010
+              </span>
+              <span class="endDate">
+              - 2012
+              </span>
+            </div>
+            <div class="header-left">
+              <div class="studyType">
+                Master
+              </div>
+              <div class="area">
+                Information Assurance
+              </div>
+              <div class="institution">
+                Norwich University
+              </div>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+        <section class="education-item">
+          <header class="clear">
+            <div class="date">
+              <span class="startDate">
+              1991
+              </span>
+              <span class="endDate">
+              - 1993
+              </span>
+            </div>
+            <div class="header-left">
+              <div class="studyType">
+                Bachelor
+              </div>
+              <div class="area">
+                Computer Information Systems
+              </div>
+              <div class="institution">
+                Strayer University
+              </div>
+            </div>
+          </header>
+    
+    
+    
+          <div class="item">
+          </div>
+        </section>
+      </section>
+    </section>
+      <section class="section">
+        <header>
+          <h2 class="section-title">Certificates</h2>
+        </header>
+        <section id="certificates">
+            <section class="certificate-item">
+              <header class="clear">
+                  <div class="date">
+                    2017-10
+                  </div>
+                <div class="header-left">
+                    <div class="name">
+                      AWS Associate Solutions Architect
+                    </div>
+                    <div class="issuer">
+                      Amazon Web Services
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="https://aw.certmetrics.com/amazon/public/verification.aspx">https://aw.certmetrics.com/amazon/public/verification.aspx</a>
+                  </span>
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                  <div class="date">
+                    2017-02
+                  </div>
+                <div class="header-left">
+                    <div class="name">
+                      Certified Ethical Hacker - To verify: Use name &#x27;Andrew Donelson Bruce&#x27; and Certification Number ECC16919383722
+                    </div>
+                    <div class="issuer">
+                      EC-Council
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="https://aspen.eccouncil.org/verify.aspx">https://aspen.eccouncil.org/verify.aspx</a>
+                  </span>
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                  <div class="date">
+                    2010-06
+                  </div>
+                <div class="header-left">
+                    <div class="name">
+                      CISSP - To verify: Use name &#x27;Andrew Bruce&#x27; and Member ID 363748
+                    </div>
+                    <div class="issuer">
+                      ISC^2
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="https://webportal.isc2.org/custom/certificationverification.aspx">https://webportal.isc2.org/custom/certificationverification.aspx</a>
+                  </span>
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                  <div class="date">
+                    2010-12
+                  </div>
+                <div class="header-left">
+                    <div class="name">
+                      PMP - To verify: Use name &#x27;Andrew Bruce&#x27; and country &#x27;USA&#x27; (certification number is 1380110)
+                    </div>
+                    <div class="issuer">
+                      PMI
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="https://certification.pmi.org/registry.aspx">https://certification.pmi.org/registry.aspx</a>
+                  </span>
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                  <div class="date">
+                    2010-09
+                  </div>
+                <div class="header-left">
+                    <div class="name">
+                      FITSP-Designer - To verify: Use name &#x27;BRUCE&#x27; and Certification # 282
+                    </div>
+                    <div class="issuer">
+                      FITSI
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="https://www.fitsi.org/fitsi/cert.asp">https://www.fitsi.org/fitsi/cert.asp</a>
+                  </span>
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                  <div class="date">
+                    2011-05
+                  </div>
+                <div class="header-left">
+                    <div class="name">
+                      ITILv3 - To verify: Use name &#x27;BRUCE&#x27;, Certification # 4231761.936515, Module &#x27;ITIL® Foundation Certificate in IT Service Management
+                    </div>
+                    <div class="issuer">
+                      EXIN
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="https://www.exin.com/NL/en/certificate-authentication">https://www.exin.com/NL/en/certificate-authentication</a>
+                  </span>
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                  <div class="date">
+                    2013-05
+                  </div>
+                <div class="header-left">
+                    <div class="name">
+                      VCP5-DV
+                    </div>
+                    <div class="issuer">
+                      VMware
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="https://www.vmware.com">https://www.vmware.com</a>
+                  </span>
+              </div>
+            </section>
+            <section class="certificate-item">
+              <header class="clear">
+                  <div class="date">
+                    2013-06
+                  </div>
+                <div class="header-left">
+                    <div class="name">
+                      Certified Data Administrator, Data ONTAP 7-Mode - To verify: use Verification Code &#x27;L7D4ZCRCKEE11RS4&#x27;
+                    </div>
+                    <div class="issuer">
+                      NetApp
+                    </div>
+                </div>
+              </header>
+    
+              <div class="item">
+                  <span class="url">
+                    <span class="fas fa-external-link-alt"></span>
+                    <a target="_blank" href="https://www.certmetrics.com/netapp/public/verification.aspx">https://www.certmetrics.com/netapp/public/verification.aspx</a>
+                  </span>
+              </div>
+            </section>
+        </section>
+      </section>
+    <section class="section">
+      <header>
+        <h2 class='section-title' class='section-title'>Interests</h2>
+      </header>
+      <section id="interests">
+        <div class="item">
+          <h3 class="name">
+            Rock/Jazz Musician in DC metro area
+          </h3>
+          <ul class="keywords">
+            <li>keys</li>
+            <li>rock</li>
+            <li>jazz</li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+  </body>
+</html>
