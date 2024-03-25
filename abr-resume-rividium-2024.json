@@ -5,20 +5,19 @@
   "basics": {
     "name": "Andrew D. Bruce",
     "label": "Lead Engineer",
-    "email": "andy.bruce@rividium.com",
-    "url": "http://www.softwareab.net/wordpress/",
+		"image": "https://github.com/andybrucenet.png",
     "summary": "I am a passionate believer in the power of technology to increase productivity and to reduce costs. I want to use my demonstrated software development, cloud, virtualization and automation capabilities to help your organization streamline its daily operations, continuously improve its technical environment, assist in delivering highest-quality products on time and in budget, and delight your end-customer.",
+    "website": "http://triplecyber.com/",
+    "email": "andy.bruce@rividium.com",
     "location": {
-      "address": "5828 N Church St",
-      "postalCode": "PA 17327",
-      "city": "Glen Rock",
+      "city": "Tysons Corner",
       "countryCode": "US"
     },
     "profiles": [
       {
-        "network": "Github",
         "username": "andybrucenet",
-        "url": "https://github.com/andybrucenet"
+        "url": "https://github.com/andybrucenet",
+        "network": "Github"
       },
       {
         "network": "LinkedIn",
@@ -27,14 +26,82 @@
       }
     ]
   },
+  "education": [
+    {
+      "institution": "Norwich University",
+      "area": "Information Assurance",
+      "studyType": "Master",
+      "startDate": "2010-07",
+      "endDate": "2012-06"
+    },
+    {
+      "institution": "Strayer University",
+      "area": "Computer Information Systems",
+      "studyType": "Bachelor",
+      "startDate": "1991-09",
+      "endDate": "1993-05"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Cloud",
+      "level": "advanced",
+      "keywords": [ "AWS", "Azure" ]
+    },
+    {
+      "name": "Virtualization",
+      "level": "master",
+      "keywords": [ "OpenStack", "VMware", "Hyper-V" ]
+    },
+    {
+      "name": "Containers",
+      "level": "advanced",
+      "keywords": [ "Docker", "Kubernetes", "OpenShift", "Docker Swarm" ]
+    },
+    {
+      "name": "Storage",
+      "level": "advanced",
+      "keywords": [ "Ceph", "iSCSI", "NFS" ]
+    },
+    {
+      "name": "Scripting",
+      "level": "master",
+      "keywords": [ "Shell (Linux)", "PowerShell", "Perl", "Python" ]
+    },
+    {
+      "name": "Automation / Configuration Management",
+      "level": "advanced",
+      "keywords": [ "Puppet", "Ansible", "AWS CloudFormation" ]
+    },
+    {
+      "name": "Programming",
+      "level": "advanced",
+      "keywords": [ "C++", "C#", "Java", "Swift", "Objective-C", "Kotlin" ]
+    },
+    {
+      "name": "Database",
+      "level": "advanced",
+      "keywords": [ "MySQL", "PostgreSQL", "SQL Server" ]
+    },
+    {
+      "name": "Infrastructure",
+      "level": "advanced",
+      "keywords": [ "Switches (HP / Dell / Cisco)", "Routing", "VLAN Segmentation" ]
+    },
+    {
+      "name": "Project",
+      "level": "advanced",
+      "keywords": [ "Agile", "TFS", "JIRA", "Redmine", "GitHub", "MS Project" ]
+    }
+  ],
   "work": [
     {
       "name": "TripleCyber Corp.",
-      "position": "Software / Azure Engineer",
+      "position": "Lead Engineer",
       "url": "https://www.triplecyber.com",
       "startDate": "2020-07",
       "summary": "I develop proprietary software for .NET (C#) and Mobile (Kotlin/Swift/Objective-C). I created and manage the entire system automated build / integration testing leveraging Azure DevOps for hosting. My daily tasks include leading Team developers, developing backend cross-platform libraries for delivery to other software Teams, generating monthly sprint software releases and demonstrating sprint releases to stakeholders. My solutions rely heavily on test-driven development and maintaining automated developer-specific environments which can be spun up or down on a single command. I write much of the software technical documentation delivered to the wider Team in addition to maintaining up-to-date READMEs for each of the library projects I am responsible for.",
-      "highlights": ["Develop C# backend support libraries loadable by native Android/iOS apps", "Lead all system engineering including builds / software packaging / automation / cloud management", "Integrate automated production hosting capabilities with corporate Azure account including scalesets and automated versionable updates", "Built Word / Outlook COM addins using C# which integrate TripleCyber's security products seamlessly", "Develop cross-platform service to run TripleCyber's security product on Windows / Mac / Linux as well as all support applications (e.g. Command-Line Interface and Service Management tools)" ]
+      "highlights": ["Develop C++ backend mobile libraries (iOS/Android) consumed by dev Team", "Develop C# backend support libraries consumed by dev Team", "Lead all system engineering including builds / software packaging / automation / cloud management", "Integrate automated production hosting capabilities with corporate Azure account including scalesets and automated versionable updates", "Built Word / Outlook COM addins using C# which integrate TripleCyber's security products seamlessly", "Develop cross-platform service to run TripleCyber's security product on Windows / Mac / Linux as well as all support applications (e.g. Command-Line Interface and Service Management tools)" ]
     },
     {
       "name": "Leidos",
@@ -111,22 +178,6 @@
       "summary": "Review FITSI exams and applications to validate completeness and accuracy."
     }
   ],
-  "education": [
-    {
-      "institution": "Norwich University",
-      "area": "Information Assurance",
-      "studyType": "Master",
-      "startDate": "2010-07",
-      "endDate": "2012-06"
-    },
-    {
-      "institution": "Strayer University",
-      "area": "Computer Information Systems",
-      "studyType": "Bachelor",
-      "startDate": "1991-09",
-      "endDate": "1993-05"
-    }
-  ],
   "certificates": [
     {
       "name": "AWS Associate Solutions Architect",
@@ -176,58 +227,6 @@
       "issuer": "NetApp",
       "url": "https://www.certmetrics.com/netapp/public/verification.aspx",
       "curriculum": [ "https://www.certmetrics.com/netapp/public/verification.aspx", "To verify: use Verification Code 'L7D4ZCRCKEE11RS4'"]
-    }
-  ],
-  "skills": [
-    {
-      "name": "Cloud",
-      "level": "advanced",
-      "keywords": [ "AWS", "Azure" ]
-    },
-    {
-      "name": "Virtualization",
-      "level": "master",
-      "keywords": [ "OpenStack", "VMware", "Hyper-V" ]
-    },
-    {
-      "name": "Containers",
-      "level": "advanced",
-      "keywords": [ "Docker", "Kubernetes", "OpenShift", "Docker Swarm" ]
-    },
-    {
-      "name": "Storage",
-      "level": "advanced",
-      "keywords": [ "Ceph", "iSCSI", "NFS" ]
-    },
-    {
-      "name": "Scripting",
-      "level": "master",
-      "keywords": [ "Shell (Linux)", "PowerShell", "Perl", "Python" ]
-    },
-    {
-      "name": "Automation / Configuration Management",
-      "level": "advanced",
-      "keywords": [ "Puppet", "Ansible", "AWS CloudFormation" ]
-    },
-    {
-      "name": "Programming",
-      "level": "advanced",
-      "keywords": [ "C++", "C#", "Java", "Swift", "Objective-C", "Kotlin" ]
-    },
-    {
-      "name": "Database",
-      "level": "advanced",
-      "keywords": [ "MySQL", "PostgreSQL", "SQL Server" ]
-    },
-    {
-      "name": "Infrastructure",
-      "level": "advanced",
-      "keywords": [ "Switches (HP / Dell / Cisco)", "Routing", "VLAN Segmentation" ]
-    },
-    {
-      "name": "Project",
-      "level": "advanced",
-      "keywords": [ "Agile", "TFS", "JIRA", "Redmine", "GitHub", "MS Project" ]
     }
   ],
   "interests": [
